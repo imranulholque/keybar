@@ -47,7 +47,7 @@ sealed class BarForm : Form
         StartPosition = FormStartPosition.Manual;
         BackColor = Color.FromArgb(20, 23, 31);
         DoubleBuffered = true;
-        SetStyle(ControlStyles.AllPaintingInPaintEvent | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
+        SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.UserPaint | ControlStyles.OptimizedDoubleBuffer, true);
 
         // Layout (single line)
         int pad = Px(8), kw = Px(40), kh = Px(32), gap = Px(6), gripW = Px(14);
